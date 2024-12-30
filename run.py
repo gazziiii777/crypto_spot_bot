@@ -4,12 +4,13 @@ import os
 
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
+from aiogram.client.bot import DefaultBotProperties
 
 from app.tg.handlers import router
 
 load_dotenv()
 
-bot = Bot(token=os.getenv('TOKEN'))
+bot = Bot(token=os.getenv('TOKEN'), default=DefaultBotProperties(parse_mode='HTML'))
 dp = Dispatcher()
 
 

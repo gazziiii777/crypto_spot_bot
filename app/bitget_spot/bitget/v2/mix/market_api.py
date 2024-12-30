@@ -1,6 +1,6 @@
 #!/usr/bin/python
-from app.tg import Client
-from app.tg import GET
+from app.bitget_spot.bitget.client import Client
+from app.bitget_spot.bitget.consts import GET, POST
 
 
 class MarketApi(Client):

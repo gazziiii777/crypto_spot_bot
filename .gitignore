@@ -2,8 +2,7 @@
 /.idea
 /__pycache__
 .env
-app/__pycache__/
-app/tg/__pycache__/
-app/__init__.py
-app/bitget_spot/__init__.py
-app/tg/__init__.py
+app/bitget_spot/example.py
+app/bitget_spot/example_ws_contract.py
+**/__pycache__/
+**/__init__.py
