@@ -1,6 +1,6 @@
 #!/usr/bin/python
-from app.bitget_spot.bitget.client import Client
-from app.bitget_spot.bitget.consts import GET, POST
+from app.tg import Client
+from app.tg import GET, POST
 
 
 class WalletApi(Client):
