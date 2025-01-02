@@ -18,6 +18,8 @@ class MarketData:
         }
         try:
             response = self.market_api.orderbook(params)
+            if not response['data']['bids']:  # Если ответ с пустым binds, то пишем, что тоже продать нельзя
+                response = 'Нельзя продать на споте'
         except:
             response = 'Нельзя продать на споте'
 

@@ -42,7 +42,7 @@ async def button_get_balance(message: Message):
         else:
             if coin == 'USDT':
                 bitget_total_balance += available
-                text += f'<b>{available} ${coin}</b> ~ `{available}\n'
+                text += f'<b>{available} ${coin}</b> ~ {available}$\n'
             else:
                 text += f'<b>{available} ${coin}</b> ❗️{coin_bids}❗️\n'
     text += f'Всего ~ {round(bitget_total_balance, 2)}$'
