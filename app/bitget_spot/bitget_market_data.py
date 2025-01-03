@@ -1,12 +1,12 @@
 import app.bitget_spot.bitget_client_api as api
 
 
-class MarketData:
+class BitgetMarketData:
     def __init__(self):
         self.client_api = api.BitgetApiClient()
         self.market_api = self.client_api.get_market_api()
 
-    async def get_first_binds(self, symbol: str):
+    def get_first_binds(self, symbol: str):
         """
         Метод, который возвращает первую цену по которой можно продать монету
         :param symbol: BTCUSDT
