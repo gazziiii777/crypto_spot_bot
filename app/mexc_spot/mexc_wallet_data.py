@@ -9,7 +9,7 @@ class MexcWalletData:
     def __init__(self):
         self.spot_client = api.MexcApi().get_spot_client()
 
-    async def get_wallet_balance(self):
+    def get_wallet_balance(self):
         """
         -
         """

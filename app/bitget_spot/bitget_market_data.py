@@ -13,17 +13,17 @@ class BitgetMarketData:
         :return:
         """
         params = {
-            "symbol": symbol,
+            "symbol": symbol + 'USDT',
             "limit": 1
         }
         try:
             response = self.market_api.orderbook(params)
             if not response['data']['bids']:  # Если ответ с пустым binds, то пишем, что тоже продать нельзя
-                response = 'Нельзя продать на споте'
+                return False
         except:
-            response = 'Нельзя продать на споте'
+            return False
 
-        return response
+        return response['data']['bids'][0][0]
 
     async def get_order_book(self, symbol: str):
         """
