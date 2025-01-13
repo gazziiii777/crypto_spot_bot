@@ -2,9 +2,9 @@ import os
 
 from dotenv import load_dotenv
 
-import app.bitget_spot.bitget.bitget_api as baseApi
-import app.bitget_spot.bitget.v2.spot.account_api as accountApi
-import app.bitget_spot.bitget.v2.spot.market_api as marketApi
+import app.exchanges.bitget_spot.bitget.bitget_api as baseApi
+import app.exchanges.bitget_spot.bitget.v2.spot.account_api as accountApi
+import app.exchanges.bitget_spot.bitget.v2.spot.market_api as marketApi
 load_dotenv()
 
 

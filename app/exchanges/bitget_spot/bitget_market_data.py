@@ -1,4 +1,4 @@
-import app.bitget_spot.bitget_client_api as api
+import app.exchanges.bitget_spot.bitget_client_api as api
 
 
 class BitgetMarketData:

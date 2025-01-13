@@ -1,4 +1,4 @@
-import app.mexc_spot.mexc_client_api as api
+import app.exchanges.mexc_spot.mexc_client_api as api
 
 
 class MexcWalletData:

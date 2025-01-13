@@ -6,10 +6,10 @@ from aiogram.types import Message
 
 import app.tg.keyboards as kb
 import app.tg.message_text as message_data
-import app.bitget_spot.bitget_wallet_data as bitget_wallet
-import app.bitget_spot.bitget_market_data as bitget_market
-import app.mexc_spot.mexc_wallet_data as mexc_wallet
-import app.mexc_spot.mexc_market_data as mexc_market
+import app.exchanges.bitget_spot.bitget_wallet_data as bitget_wallet
+import app.exchanges.bitget_spot.bitget_market_data as bitget_market
+import app.exchanges.mexc_spot.mexc_wallet_data as mexc_wallet
+import app.exchanges.mexc_spot.mexc_market_data as mexc_market
 
 router = Router()
 
