@@ -5,4 +5,3 @@
 app/exchanges/bitget_spot/example.py
 app/exchanges/bitget_spot/example_ws_contract.py
 **/__pycache__/
-**/__init__.py
